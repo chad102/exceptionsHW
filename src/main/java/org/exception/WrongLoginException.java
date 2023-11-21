@@ -1,4 +1,10 @@
 package org.exception;
 
-public class WrongLoginException extends Exception {
+import java.io.IOException;
+
+public class WrongLoginException extends IOException {
+
+    public WrongLoginException(String message) {
+        super(message);
     }
+}
